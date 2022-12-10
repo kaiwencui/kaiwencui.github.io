@@ -1,0 +1,86 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 405px;
+  font-family: 'Calibri', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 405px;
+  }
+}
+
+#headerblob {
+    position: absolute;
+    top: 150px;
+    vertical-align: middle;
+    left: 50% !important;
+    transform: translate(-50%,0);
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) { 
+    #headerblob {
+     position: absolute;
+     padding-left: 10%;
+     top: 150px;
+     width: 80%;
+    }
+}
+
+.imgme {
+    border: 3px solid white;
+    float: left;
+    height: 200px;
+    width: 200px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#headertext {
+ font-size: 26px;
+ font-weight: 400;
+ margin-top: 32px;
+ margin-left: 220px;
+}
+
+#gradient-top{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    right: 0px;
+    height: 320px;
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+#head-1 {
+    font-size: 46px;
+    font-weight: 400;
+}
+
+#head-2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -6px;
+}
+
+#head-3 {
+    font-size: 14px;
+    font-weight: 300;
+}
+h4{
+    border-bottom: 1px solid #eee;
+    line-height: 1.2em;
+    font-weight: bold;
+}
