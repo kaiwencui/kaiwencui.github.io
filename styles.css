@@ -1,0 +1,210 @@
+body {
+    font-family: 'Lora', Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    margin: 5rem auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #f0f0f0; /* Add this line */
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+
+h2 {
+    font-size: 1rem;
+    color: darkgreen;
+    margin-bottom: 0.8rem;
+}
+
+.container p, .container h3 {
+    text-align: left;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  margin-top: 3.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+.experience-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+@supports (gap: 1rem) {
+  .experience-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+}
+
+.experience-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 0.5rem;
+}
+
+.experience h4 {
+    margin-bottom: 0;
+}
+
+.experience-bottom p:first-child {
+    margin-bottom: 0.5rem;
+}
+
+.experience p {
+    margin-bottom: 0.2rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+
+.experience-wrapper {
+    position: relative;
+}
+
+.date {
+  position: absolute;
+  top: 7px;
+  left: -165px;
+  font-weight: bold;
+  text-align: right !important;
+  width: 150px;
+}
+
+.header {
+    padding: 1rem;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.centered {
+    margin-top: 50px;  
+}
+
+.container .centered p{
+    text-align: center !important;
+    margin-bottom: 0rem;
+    line-height: 1;
+}
+
+a {
+    color: darkgreen;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: green;
+}
+
+.location {
+  margin-top: 0px;
+  color: #666666;
+}
+
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.date-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+@media only screen and (max-width: 1080px) {
+  .experience-top {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .detail-wrapper,
+  .date-wrapper {
+    width: auto;
+  }
+  
+  .detail-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+    order: 2;
+  }
+  
+  .date-wrapper {
+    order: 1;
+  }
+
+
+  .date { /* Add this part */
+    position: static;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: left !important;
+    margin-top: .5rem; /* or change this part depending on your desired spacing */
+  }
+  
+  .detail-wrapper p {
+    margin-bottom: -1px;
+    margin-left: 10px;
+  }
+  
+}
